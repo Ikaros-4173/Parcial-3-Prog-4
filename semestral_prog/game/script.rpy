@@ -127,6 +127,19 @@ label start:
     hide asis1
 
     show detective2 with dissolve
+
+    d "Después de conversar con mi jefa, me dirigí hacia el lugar de los hechos."
+    d "Las dudas que tengo son: ¿Porqué la mataron? y ¿Quien hizo esto?"
+    d "Pero saldré de esta duda cuando vea las pistas en la escena."
+
+    scene tercer fondo with fade
+    hide detective2
+
+    show detective3 with dissolve
+
+
+ 
+    
     
     
     
