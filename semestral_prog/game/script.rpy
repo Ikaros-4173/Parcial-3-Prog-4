@@ -100,36 +100,33 @@ label start:
     
     menu:
         "fue un robo.":
-    hide detective1
-    show asis2
     
              s "Si fuera el móvil un robo, la escena no fuera tan sangrienta"   
     
       
-         "fue un femicidio.":
-    hide detective1
-    show asis2
+        "fue un femicidio.":
+   
              s "Un hombre sin cojones sólo haría esto, y esta vez tendrás que investigar este crimen"
          
 
         "fue un accidente.":
-    hide detective1
-    show asis2
+    
              s "Este pueblo es muy pacífico para que ocurra hecho así"
              s "Sin embargo, si fuese un accidente, el culpable no se hubiese dado a la fuga"
             
-    hide asis2
-     
-    show detective2 with dissolve       
-    
-    d "Ya dejemos las preguntas de un lado, lo que importa es que debo resolver otro crimen"
-    
     hide detective1
+     
+    show asis1 with dissolve      
     
-    show asis2
-    
-    s "exactamente, el crimen ocurrió en las afueras del pueblo, y trata de buscar las pistas posibles"
-    
+    s "Ya dejemos las preguntas de un lado, lo que importa es que debo resolver otro crimen"
+    s "exactamente, el crimen ocurrió en las afueras del pueblo, y necesitamos todas las pistas posibles"
+    s "Así encontraremos al perpetrador de esto"
+
+    scene tercer fondo with fade
+
+    hide asis1
+
+    show detective2 with dissolve
     
     
     
