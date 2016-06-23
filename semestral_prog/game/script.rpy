@@ -129,16 +129,16 @@ label start:
 
     scene tercer fondo with fade
 
-    show detective2 with dissolve
+    show detective3 with dissolve
 
-    d "Después de conversar con mi jefa, me dirigí hacia el lugar de los hechos."
+    d "Después de conversar con mi asistonta, me dirigí hacia el lugar de los hechos."
     d "Las dudas que tengo son: ¿Porqué la mataron? y ¿Quien hizo esto?"
     d "Pero saldré de esta duda cuando vea las pistas en la escena."
 
     hide detective2
     scene segundo fondo with fade
     
-    show detective2 with dissolve
+    show detective3 with dissolve
 
     d "Al llegar a la escena, vi que estaba acordonada y el cadáver yacía en el pavimento."
     d "Al cruzar la línea amarilla, un policía encargado del caso me explica lo ocurrrido."     
@@ -149,7 +149,12 @@ label start:
 
     hide pol
 
-    
+    show detective3 with dissolve
+
+    d "Soy detective del ministerio público y tengo toda la autorización de esta aquí"
+    d "Dígame que ocurrió aquí?"
+
+
  
     
     
