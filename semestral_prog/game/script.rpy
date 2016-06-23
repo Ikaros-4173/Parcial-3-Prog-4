@@ -34,6 +34,8 @@ image asis2="default_midori-kuriyama.png"
 
 image ik="Ikaros_chibi.png"
 
+image pol="Policia_Eddie.png"
+
 
 # Declare characters used by this game.
 # - Declara los personajes usados en el juego como en el
@@ -45,7 +47,7 @@ define b = Character ('Burt', color="#9932CC")
 define c = Character ('Carl', color="#4169E1")
 define i = Character ('Ikaros',color="#FA5882")
 define s= Character ('Asistente',color="#B45F04")
-
+define p= Character ('Policia',color="#FFFF00")
 
 # - El juego comienza aquí.
 label start:
@@ -122,9 +124,10 @@ label start:
     s "exactamente, el crimen ocurrió en las afueras del pueblo, y necesitamos todas las pistas posibles"
     s "Así encontraremos al perpetrador de esto"
 
-    scene tercer fondo with fade
-
     hide asis1
+
+
+    scene tercer fondo with fade
 
     show detective2 with dissolve
 
@@ -132,12 +135,21 @@ label start:
     d "Las dudas que tengo son: ¿Porqué la mataron? y ¿Quien hizo esto?"
     d "Pero saldré de esta duda cuando vea las pistas en la escena."
 
-    scene tercer fondo with fade
     hide detective2
+    scene segundo fondo with fade
+    
+    show detective2 with dissolve
 
-    show detective3 with dissolve
+    d "Al llegar a la escena, vi que estaba acordonada y el cadáver yacía en el pavimento."
+    d "Al cruzar la línea amarilla, un policía encargado del caso me explica lo ocurrrido."     
 
+    show pol with dissolve 
 
+    p "Alto ahí, identifíquese!!!"
+
+    hide pol
+
+    
  
     
     
