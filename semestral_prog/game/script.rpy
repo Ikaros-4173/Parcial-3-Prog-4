@@ -34,8 +34,8 @@ image asis2="default_midori-kuriyama.png"
 
 image ik="Ikaros_chibi.png"
 
-image pol="Policia_Eddie.png"
-
+image pol1="jefe-gorgori.png"
+image pol2="wiggum.png"
 
 # Declare characters used by this game.
 # - Declara los personajes usados en el juego como en el
@@ -143,16 +143,44 @@ label start:
     d "Al llegar a la escena, vi que estaba acordonada y el cadáver yacía en el pavimento."
     d "Al cruzar la línea amarilla, un policía encargado del caso me explica lo ocurrrido."     
 
-    show pol with dissolve 
+    hide detective3
+    show pol1 with dissolve 
 
     p "Alto ahí, identifíquese!!!"
 
-    hide pol
+    hide pol1
 
     show detective3 with dissolve
 
     d "Soy detective del ministerio público y tengo toda la autorización de esta aquí"
     d "Dígame que ocurrió aquí?"
+
+    hide detective3
+
+    show pol2 with dissolve
+
+    p "Testigos del área circundante, afirmaron escuchar disparos"
+    p "Después de eso, un chaval encuentra a la victima en el suelo"
+    p "Intentó socorrerla, pero ya no tenía signos vitales"
+
+    hide pol2
+
+    show detective3 with dissolve
+
+    d "Y encontraron algun indicio, pista, o algo similar???"
+
+    hide detective3
+
+    show pol2 with dissolve
+
+    p "Pudimos encontrar varios casquillos de bala y un revolver calibre 38"
+   
+    hide pol2
+
+    show detective2 with dissolve
+
+    d "Excelente, con esa pista podré dar con el perpetrador del crimen" 
+ 
 
 
  
