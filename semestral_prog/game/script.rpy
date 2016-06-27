@@ -10,6 +10,7 @@ image octavo fondo="terminal.jpg"
 image noveno fondo="captura.jpg"
 image decimo fondo="cadeia4.jpg"
 image undecimo fondo="sala_interrogatorio3.jpg"
+image duodecimo fondo="sala_interrogatorio.jpg"
 image ultimo fondo="fin.jpg"
                     
 #personajes.
@@ -181,10 +182,56 @@ label start:
 
     d "Excelente, con esa pista podré dar con el perpetrador del crimen" 
  
+    hide detective2
 
+    scene sexto fondo
 
- 
+    show detective3 with dissolve
+
+    d "Después del levantamiento del cádaver, tomé un casquillo de bala como prueba"
+    d "Y con éste, haré un análisis para determinar si existe alguna huella digital"
+    d "Hoy será una noche larga porque debo hallar al culpable"
+
+    hide detective3
+
+    scene duodecimo fondo
+
+    d "Al caer la noche, me puse a analizar minusiosamente ese casquillo"
+    d "Mediante métodos de alta tecnología, deduzco al culpable"
+
+    show detective4 with dissolve
+
+    d "Ajaa!, encontré huellas digitales, esto será de mucha ayuda"
+    d "Ahora, podré deducir quien es el victimario de ello"
+    d "Pero para tener una conclusión deberé repasar lo ocurrido en este crimen"
+    d "Bueno comenzaré"
+
+    hide detective4
     
+    show detective3 with dissolve
+
+    d "Dónde ocurrió el crimen suscitado?"
+    menu:
+        "En el centro del pueblo":
+               jump centro
+        "En las afueras del pueblo":
+               jump afueras
+
+    label centro:
+    d "Donde yacía el cadáver de la victima??"
+    menu:
+       "En el pavimento de la calle":
+           jump calle
+       "En un terreno baldio":
+           jump terreno
+    
+    label afueras:
+    d "Quien fue la victima del mismo?"
+    menu:
+        "Un hombre":
+            jump hombre
+        "Una mujer":
+            jump mujer
     
     
     
