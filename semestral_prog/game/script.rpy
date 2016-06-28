@@ -318,13 +318,21 @@ label start:
 
     show detective2 with dissolve
 
-    d "¿Cual era la relación de Burt con la víctima?"
-    menu:
-        "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
-                 jump odio
-        "Burt era el mejor amigo de la victima, Carl y la victima era enemigos mortales":
-                 jump amigo
-    
+    d "¿Cual era la relación de los sospechosos con la víctima?"
+        menu:
+            "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
+                 jump didNotKnowVic
+             "Burt era el mejor amigo de la victima, Carl y la victima era enemigos mortales":
+                 jump KnewVic
+
+        label didNotKnowVic
+            d "Correcto, joven art, continuemos con la siguiente pregunta"
+           
+            python:
+                from pyswip import Prolog
+                prolog= Prolog()
+
+
    
        
  
