@@ -20,12 +20,14 @@ image detective3="Detectivee.png"
 image detective4="DetectiveAjja.png"
 
 image art1="Hablandoo 2.png"
+image art2="Felizz.png"
+image art3="Sorprenndido.png"
 
 image burt1="Captura de pantalla (113).png"
 image burt2="hablando11.png"
 
 image carl1="yonofui.png"
-image carl2="Felizz.png"
+image carl2="sospechoso.png"
 
 
 image vict1="la foto2.png"
@@ -203,42 +205,136 @@ label start:
 
     d "Ajaa!, encontré huellas digitales, esto será de mucha ayuda"
     d "Ahora, podré deducir quien es el victimario de ello"
-    d "Pero para tener una conclusión deberé repasar lo ocurrido en este crimen"
-    d "Bueno comenzaré"
+    d "Según la prueba de ADN hecha a la huella digital"
+    d "El resultado corresponde a un sujeto llamado Art"
+    d "¡Ya tengo al primer sospechoso!"
+    
+    hide detective4
+
+    scene quinto fondo with fade 
+
+    d "Con el descubrimiento del primer sospechoso."
+    d "Ordeno la detención preventiva del primer implicado."
+    d "El acusado deberá dar su versión de los hechos, para seguir con la investigación"
+    
+    show detective3 with dissolve
+    
+    d "En cuestión de horas, llega el acusado"
+    d "Tiene un rostro de yo no fui, pero no debo confiarme del chaval"
+
+    hide detective3 with dissolve
+    
+    show art3 with dissolve
+    
+    a "¡Soy inocente, no sé de que diablos me acusan!"
+    a "Dejenme ir!"
+
+    hide art3
+
+    show detective4 with dissolve
+    
+    d "Nunca, nunca te dejaré ir, al menos que seas inocente"
 
     hide detective4
+
+    show detective1 with dissolve
+    d "Joven Art, se descubrió en unos casquillos sus huellas digitales"
+    d "Casquillos de bala, que se usaron en el asesinato de una mujer"
+    d "Digame, todo lo referente al caso"
+    d "Todo lo que diga ahora, será usado en pro o en su contra"
+    d "Si llega a dar datos falsos, le caerá todo el peso de la ley" 
+    
+    hide detective1
+
+    show art1 at right with dissolve
+    
+    a "Yo conozco a dos tipos, que tuvieron contacto alguna vez con la occisa"
+    a "Le juro por Dios, que no tengo que ver con esto!"
+
+    hide art1
+
+    show detective2
+
+    d "¿Me podrías indicar quienes son aquellos involucrados"
+    d "Si lo que dice, ayuda a la resolución del crimen"
+    d "Usted quedará absuelto de los cargos"
+
+    hide detective2
+
+    show art1 at right with dissolve
+
+    a "Esta bien, acepto el trato"
+    a "Sus nombres son Burt y Carl"
+    a "Ellos se llevaban con aquella mujer"
+    a "Yo sólo la vi de vista con ellos, pero no tuve alguna relación amistosa"
+
+    hide art1
+
+    show detective4 with dissolve
+
+    d "Excelente joven Art, ahora mismo daré la orden de captura a ellos"
+    d "Pero no cante victoria, ellos deberán dar su declaración a la fiscalía"
+    d "Igual que usted, y alguno de ellos es culpable, usted quedará libre"
+
+    hide detective4
+
+    show art1 at right with dissolve
+   
+    a "Esta bien, no hay ningún problema"
+
+    hide art1 
+
+    scene undecimo fondo with fade
+
+    d "Así pasó la primera noche de investigación"
+    d "Art pasó su noche en una celda preventiva"
+    d "Mientras tanto los otros compinches fueron capturados"
+    d "Uno de ellos deambulaba por la calle, como si nada hubiera ocurrido"
+    d "Mientras que el otro, intentó darse a la fuga"
     
     show detective3 with dissolve
 
-    d "Dónde ocurrió el crimen suscitado?"
-    menu:
-        "En el centro del pueblo":
-               jump centro
-        "En las afueras del pueblo":
-               jump afueras
+    d "Llegó el día de la verdad"
+    d "Los otros sospechosos llegaron escoltados por policías"
+    d "Cada implicado dará su versión de los hechos"
+    d "Sumado a esto, un polígrafo grabará toda la indagatoria y nos dirá quien miente"
+    
+    hide detective3
 
-    label centro:
-    d "Donde yacía el cadáver de la victima??"
+    show detective2 with dissolve
+
+    d "Señor Art, usted dará su versión de los hechos"
+    d "Su declaración será grabada y usted estará conectado a un polígrafo"
+    d "Este aparato nos dirá su inocencia del crimen"
+    d "¿Está listo?"
+
+    hide detective2
+
+    show art1 at right with dissolve
+    
+    a "Estoy listo"
+
+    hide art1
+
+    show detective2 with dissolve
+
+    d "¿Cual era la relación de Burt con la víctima?"
     menu:
-       "En el pavimento de la calle":
-           jump calle
-       "En un terreno baldio":
-           jump terreno
+        "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
+                 jump odio
+        "Burt era el mejor amigo de la victima, Carl y la victima era enemigos mortales":
+                 jump amigo
     
-    label afueras:
-    d "Quien fue la victima del mismo?"
-    menu:
-        "Un hombre":
-            jump hombre
-        "Una mujer":
-            jump mujer
-    
-    
-    
+   
+       
+ 
+
+
+
     return 
     
     
     
     
     
-  
+

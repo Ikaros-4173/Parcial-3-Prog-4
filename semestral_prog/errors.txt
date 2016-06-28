@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 225: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "En un terreno baldío"
-                          ^
+File "game/script.rpy", line 210: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        d "¡Ya tengo al primer sospechoso!
 
 Ren'Py Version: Ren'Py 6.99.8.959
