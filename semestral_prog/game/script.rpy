@@ -1,4 +1,4 @@
-﻿#fondos usados.
+#fondos usados.
 image primer fondo="ciudad.png"
 image segundo fondo="victimamuerta.png"
 image tercer fondo="fuera_del_pueblo3.png"
@@ -51,6 +51,10 @@ define c = Character ('Carl', color="#4169E1")
 define i = Character ('Ikaros',color="#FA5882")
 define s= Character ('Asistente',color="#B45F04")
 define p= Character ('Policia',color="#FFFF00")
+
+python:
+    from pyswip import Prolog
+    prolog= Prolog()
 
 # - El juego comienza aquí.
 label start:
@@ -319,20 +323,28 @@ label start:
     show detective2 with dissolve
 
     d "¿Cual era la relación de los sospechosos con la víctima?"
-        menu:
-            "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
+        
+    menu:
+             "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
                  jump didNotKnowVic
              "Burt era el mejor amigo de la victima, Carl y la victima era enemigos mortales":
                  jump KnewVic
 
-        label didNotKnowVic
-            d "Correcto, joven art, continuemos con la siguiente pregunta"
+    label didNotKnowVic:
+            d "Exacto"
            
-            python:
-                from pyswip import Prolog
-                prolog= Prolog()
+    python:
+             from pyswip import Prolog
+             prolog = Prolog()
+             prolog.consult('/home/alexander3ddesigners/Documentos/semestral_prog/game/adriandetective.pl')
+             new_prolog_code = open('/home/alexander3ddesigners/Documentos/semestral_prog/game/indagatoria.pl','w')
+             new_facts = [] 
+             
+    python:
 
-
+    new_facts.append('claims(art,didNotKnowVic,burt,knewVic,carl).')
+    $ gift = "claims(art,didNotKnowVic,burt,knewVic,carl)"
+    e "I'll take an iguana, my good man!"
    
        
  
