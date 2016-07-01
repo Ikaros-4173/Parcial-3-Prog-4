@@ -2,12 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 343: python block expects a non-empty block.
-    python:
-           ^
-
-File "game/script.rpy", line 345: expected statement.
-    new_facts.append('claims(art,didNotKnowVic,burt,knewVic,carl).')
-                                                                    ^
+File "game/script.rpy", line 331: is not terminated with a newline. (Check strings and parenthesis.)
+                 asesino = list(prolog.query('claims(art,[[innocent,art],[knewVic,burt],[knewVic,carl]])')
 
 Ren'Py Version: Ren'Py 6.99.8.959

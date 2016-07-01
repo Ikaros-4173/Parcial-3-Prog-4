@@ -324,6 +324,13 @@ label start:
 
     d "¿Cual era la relación de los sospechosos con la víctima?"
         
+    python:
+             from pyswip import Prolog
+             prolog = Prolog()
+             prolog.consult('/home/alexander3ddesigners/Documentos/semestral_prog/game/adriandetective.pl')
+             asesino = list(prolog.query('claims(art,[[innocent,art],[knewVic,burt],[knewVic,carl]])')
+             new_prolog_code = open('/home/alexander3ddesigners/Documentos/semestral_prog/game/indagatoria.pl','w')
+             new_facts = [] 
     menu:
              "Burt y la victima se odiaban a muerte; Carl era amigo de la mujer":
                  jump didNotKnowVic
@@ -333,12 +340,7 @@ label start:
     label didNotKnowVic:
             d "Exacto"
            
-    python:
-             from pyswip import Prolog
-             prolog = Prolog()
-             prolog.consult('/home/alexander3ddesigners/Documentos/semestral_prog/game/adriandetective.pl')
-             new_prolog_code = open('/home/alexander3ddesigners/Documentos/semestral_prog/game/indagatoria.pl','w')
-             new_facts = [] 
+   
              
     python:
 
