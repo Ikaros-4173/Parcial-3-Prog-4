@@ -1,16 +1,37 @@
-Fri Jul  1 12:33:02 2016
+Fri Jul  1 18:45:57 2016
 Linux-4.4.0-24-generic-x86_64-with-Ubuntu-16.04-xenial
 Ren'Py 6.99.8.959
  
 
 Bootstrap to the start of init.init took 0.21s
-Early init took 0.02s
-Loader init took 0.01s
-Loading error handling took 0.24s
-Loading script took 3.08s
-Loading persistent took 0.01s
+Early init took 0.04s
+Loader init took 0.04s
+Loading error handling took 0.25s
+Loading script took 3.16s
+Loading persistent took 0.03s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.50s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to '/home/alexander3ddesigners/.renpy/backups/semestral_prog':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Interface start took 0.30s
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.01s
 
 primary display bounds: (0, 0, 1366, 768)
 Windowed mode.
@@ -253,4 +274,13 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 4.64709210396s
+Total time until interface ready: 5.87275099754s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.008872 seconds.
+- Frame drawn at 0.021683 seconds.
+- Frame drawn at 0.035629 seconds.
+- Frame drawn at 0.054989 seconds.
+- 0.054989 seconds to render 5 frames.
+The window was minimized.
+The window was restored.

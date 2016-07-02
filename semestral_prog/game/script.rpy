@@ -328,7 +328,7 @@ label start:
              from pyswip import Prolog
              prolog = Prolog()
              prolog.consult('/home/alexander3ddesigners/Documentos/semestral_prog/game/adriandetective.pl')
-             asesino = list(prolog.query('claims(art,[[innocent,art],[knewVic,burt],[knewVic,carl]])')
+             asesino = list(prolog.query('claims(art,[[innocent,art],[knewVic,burt],[knewVic,carl]])'))
              new_prolog_code = open('/home/alexander3ddesigners/Documentos/semestral_prog/game/indagatoria.pl','w')
              new_facts = [] 
     menu:
@@ -343,9 +343,8 @@ label start:
    
              
     python:
-
-    new_facts.append('claims(art,didNotKnowVic,burt,knewVic,carl).')
-    $ gift = "claims(art,didNotKnowVic,burt,knewVic,carl)"
+      new_facts.append('claims(art,didNotKnowVic,burt,knewVic,carl).')
+      gift = "claims(art,didNotKnowVic,burt,knewVic,carl)"
     e "I'll take an iguana, my good man!"
    
        
